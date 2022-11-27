@@ -15,8 +15,8 @@ class Solution:
                 l1.append(cur)
                 cur = cur.left
             cur = l1.pop()
-            n+=1
-            if n==k:
+            k -=1
+            if k==0:
                 return cur.val
             cur =cur.right
             
